@@ -13,14 +13,14 @@ Maintenant, vous allez modifier l'application pour la rendre un peu plus cool, e
 2. Quand l'utilisateur clique sur le bouton, faitez tourner les 2 dés en même temps. 
 3. Si les 2 dés affichent le même numéro, l'utilisateur gagne. Affichez un message de félicitations. 
 
-# Etape 2 Faites vos jeux 
+# Etape 3 Faites vos jeux 
 Nous allons encore rendre l'application plus interessant en permettant à l'utilisateur de définir un nombre à trouver en lancant les dés. Ainsi, lorsque les dés sont lancés si la somme est égale à la valeur choisie, l'utilisateur gagne sinon il perd. 
 
 1. Ajoutez une entrée permettant à l'utilisateur de définir le nombre à trouver, vous pouvez utiliser un champ de text, un radiogroup, un spinner, un slider ou n'importe quelle widget qui permet de définir une entrée. 
 2. Une fois, le nombre choisie activer le bouton de lancé de dés (ie. le bouton est désactivé tant qu'on n'a pas rentré un nombre)
 3. L'utilisateur gagne si la somme des dés est égale au nombre choisi. 
 
-# Etap 3 
+# Etap 4 
 1. Lancez automatiquement les dés quand l'utilisateur défini un nombre (i.e. le bouton n'est plus utilisé)
 2. Quand l'utilisateur gagne une partie : animer les dés (bouger de bas en haut ou de droite à gauche) ou carrément afficher des paillettes à l'écran. 
 
