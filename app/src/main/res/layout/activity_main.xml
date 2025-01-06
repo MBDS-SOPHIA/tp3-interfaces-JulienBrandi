@@ -38,15 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="@id/textView1"
         app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:layout_width="210dp"
-        android:layout_height="70dp"
-        android:text="@string/roll"
-        android:textSize="30sp"
-        android:id="@+id/button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
     <TextView
         android:layout_marginTop="18dp"
         android:layout_width="wrap_content"
@@ -56,7 +48,7 @@
         android:id="@+id/textExplanation"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/input"
-        app:layout_constraintTop_toBottomOf="@id/button" />
+        app:layout_constraintTop_toBottomOf="@id/textView1"/>
 
     <EditText
 
@@ -67,7 +59,7 @@
         android:id="@+id/input"
         app:layout_constraintStart_toEndOf="@id/textExplanation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button" />
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
 
 
 
