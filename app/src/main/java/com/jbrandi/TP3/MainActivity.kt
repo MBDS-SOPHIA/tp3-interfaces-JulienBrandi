@@ -26,21 +26,30 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
+        val textResult: TextView = findViewById(R.id.result)
+        val textInput: TextView = findViewById(R.id.input)
+        val inputValue = textInput.text.toString()
+        
+        if (inputValue.toInt() < 2 || inputValue.toInt() > 12) {
+            textResult.text = "Enter a number between 2 and 12"
+            return
+        }
+
         val dice1 = Dice(6)
         val dice2 = Dice(6)
 
         val diceRoll1 = dice1.roll()
         val diceRoll2 = dice2.roll()
+        val diceRollResults = diceRoll1 + diceRoll2
         val toast = Toast.makeText(this, "Dice Rolled", Toast.LENGTH_SHORT)
         toast.show()
         val textView: TextView = findViewById(R.id.textView1)
         textView.text = diceRoll1.toString()
-
         val textView2: TextView = findViewById(R.id.textView2)
         textView2.text = diceRoll2.toString()
 
-        val textResult: TextView = findViewById(R.id.result)
-        if (diceRoll1 == diceRoll2) {
+
+        if (diceRollResults == inputValue.toInt()) {
             textResult.text = "Congrats! You win"
         } else {
             textResult.text = "Try again"

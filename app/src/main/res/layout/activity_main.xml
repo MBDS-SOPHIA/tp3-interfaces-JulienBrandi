@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:id="@+id/result"
         tools:text="0"
         app:layout_constraintBottom_toTopOf="@id/textView1"
@@ -21,7 +21,7 @@
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:textSize="50sp"
+      android:textSize="36sp"
       android:id="@+id/textView1"
       tools:text="1"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
+        android:textSize="36sp"
         android:id="@+id/textView2"
         tools:text="1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,14 +39,36 @@
         app:layout_constraintEnd_toEndOf="@id/textView1"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="210dp"
+        android:layout_height="70dp"
         android:text="@string/roll"
-        android:textSize="36sp"
+        android:textSize="30sp"
         android:id="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView1" />
+    <TextView
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Choose a number between 2 and 12 :"
+        android:textSize="22sp"
+        android:id="@+id/textExplanation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:text="@string/number"
+        android:textSize="25sp"
+        android:id="@+id/input"
+        app:layout_constraintStart_toEndOf="@id/textExplanation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
 
 
   </androidx.constraintlayout.widget.ConstraintLayout>
